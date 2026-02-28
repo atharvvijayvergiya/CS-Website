@@ -79,7 +79,7 @@ export default function Footer() {
   };
 
   const headingStyle: React.CSSProperties = {
-    fontSize: '1.05rem',
+    fontSize: '1.50rem',
     marginBottom: '1.5rem',
     display: 'flex',
     alignItems: 'center',
