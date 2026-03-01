@@ -4,7 +4,7 @@ import ImageTrail from "@/components/ImageTrail";
 
 export default function ImageHover() {
 
-  const key = 1; // example (remove if not needed)
+  const key = 7; // example (remove if not needed)
 
   return (
     <div style={{ height: "500px", position: "relative", overflow: "hidden", backgroundColor: "black" }}>
