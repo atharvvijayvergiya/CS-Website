@@ -31,7 +31,7 @@ const Skiper19 = () => {
       </div>
 
 
-      <div className="rounded-4xl font-jakarta-sans w-full translate-y-[200vh] pb-10 text-black">
+      <div className="rounded-4xl font-jakarta-sans w-full translate-y-[200vh] pb-10 text-black bg-white">
         <h1 className="mt-10 text-center text-[15.5vw] font-bold leading-[0.9] tracking-tighter lg:text-[16.6vw]">
           ieee cs muj
         </h1>

@@ -34,7 +34,7 @@ export default function Home() {
             twitter: "https://twitter.com/johndoe",
             github: "https://github.com/johndoe"
           }}
-          className="w-[400px] h-[600px]"
+          className="w-[min(400px,90vw)] h-[min(600px,120vw)]"
         />
 
         <HorizontalGallery />

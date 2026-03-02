@@ -149,3 +149,45 @@
 .cards.open .card:has(+ .card + .card + .card + .card:hover) {
     --offsetTranslateX: -7vmin;
 }
+
+@media (max-width: 768px) {
+    .cards {
+        width: 40vmin;
+        height: 60vmin;
+    }
+
+    .card {
+        width: 40vmin;
+        height: 60vmin;
+    }
+
+    .cards.open .card:nth-child(1) {
+        --translateX: -46vmin;
+    }
+
+    .cards.open .card:nth-child(2) {
+        --translateX: -34vmin;
+    }
+
+    .cards.open .card:nth-child(3) {
+        --translateX: -18vmin;
+    }
+
+    .cards.open .card:nth-child(5) {
+        --translateX: 18vmin;
+    }
+
+    .cards.open .card:nth-child(6) {
+        --translateX: 34vmin;
+    }
+
+    .cards.open .card:nth-child(7) {
+        --translateX: 46vmin;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+}

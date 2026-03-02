@@ -39,7 +39,7 @@ export default function HorizontalGallery() {
     <div className="overflow-hidden">
       <div
         ref={scroller}
-        className="flex w-[400vw] h-screen text-white relative bg-transparent"
+        className="flex w-[400vw] min-h-screen text-white relative bg-transparent"
       >
         {/* SECTION 1 */}
         <section className="skill-set relative w-screen h-full flex items-center justify-center px-12">

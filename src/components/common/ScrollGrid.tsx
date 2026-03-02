@@ -221,8 +221,8 @@ export default function ScrollGrid() {
                             display: 'grid',
                             gridTemplateColumns: 'repeat(5, 1fr)',
                             gridTemplateRows: 'repeat(3, 1fr)',
-                            gap: '16px',
-                            width: 'min(94vw, 960px)',
+                            gap: 'clamp(8px, 1.5vw, 16px)',
+                            width: 'min(96vw, 960px)',
                             height: 'min(84vh, 680px)',
                             transformStyle: 'preserve-3d',
                         }}
