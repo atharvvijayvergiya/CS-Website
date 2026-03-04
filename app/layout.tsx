@@ -30,18 +30,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
-        <DotGrid
-          dotSize={2}
-          gap={16}
-          baseColor="#121212"
-          activeColor="#faa41a"
-          proximity={100}
-          shockRadius={370}
-          shockStrength={5}
-          resistance={1100}
-          returnDuration={1.5}
-          className="bg-black"
-        />
+        {/* Fixed full-screen background — sits behind everything */}
+        <div className="fixed inset-0 -z-10">
+          <DotGrid
+            lineColor="rgba(180, 140, 60, 0.75)"
+            backgroundColor="#0d0d0d"
+            lineCount={14}
+            animated={true}
+          />
+        </div>
+
         <Navbar />
         <main className="flex-grow">
           {children}
