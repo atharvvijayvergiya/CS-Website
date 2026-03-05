@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/src/components/common/Navbar";
 import Footer from "@/src/components/ui/Footer";
-import DotGrid from "@/components/DotGrid";
+import LandoBackground from "@/components/LandoBackground";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,18 +30,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
-        <DotGrid
-          dotSize={2}
-          gap={16}
-          baseColor="#121212"
-          activeColor="#faa41a"
-          proximity={100}
-          shockRadius={370}
-          shockStrength={5}
-          resistance={1100}
-          returnDuration={1.5}
-          className="bg-black"
-        />
+        <div className="fixed inset-0 -z-10">
+          <LandoBackground
+            lineColor="rgba(180, 140, 60, 0.75)"
+            backgroundColor="#0d0d0d"
+            lineCount={14}
+            animated={true}
+          />
+        </div>
+
         <Navbar />
         <main className="flex-grow">
           {children}
