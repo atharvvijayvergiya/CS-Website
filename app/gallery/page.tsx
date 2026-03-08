@@ -1,13 +1,16 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import LineBackground from '@/components/LineBackground';
 import ScrollGrid from '@/src/components/common/ScrollGrid';
 import HorizontalGallery from '@/src/app/gallery/HorizontalGallery';
 import SmoothScrollProvider from '@/src/app/team/SmoothScrollProvider';
-
+import ZoomGallery from '@/src/app/gallery/ZoomGallery';
+const Gallery3D = dynamic(() => import('@/src/components/common/Gallery3D'), { ssr: false });
 
 export default function Gallery() {
-  return (
+  return (<>
+  
     <SmoothScrollProvider>
       <div className="relative min-h-screen bg-black w-full">
 
@@ -20,8 +23,13 @@ export default function Gallery() {
 
           <HorizontalGallery />
 
+          <ZoomGallery />
         </div>
       </div>
     </SmoothScrollProvider>
+    <section style={{ width: '100%', height: '600px' }}>
+        <Gallery3D title="IEEE CS" />
+      </section>
+    </>
   );
 }

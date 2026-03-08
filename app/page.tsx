@@ -6,7 +6,7 @@ import TargetCursor from "@/src/components/common/TargetCursor";
 const TeamCard = dynamic(() => import('@/src/components/common/TeamCard'), { ssr: false });
 const HorizontalGallery = dynamic(() => import('@/src/app/gallery/HorizontalGallery'), { ssr: false });
 const CardStack = dynamic(() => import('@/src/components/common/CardStack'), { ssr: false });
-const Gallery3D = dynamic(() => import('@/src/components/common/Gallery3D'), { ssr: false });
+
 
 import LineBackground from "@/components/LineBackground";
 
@@ -29,21 +29,6 @@ export default function Home() {
         hoverDuration={0.2}
       />
       <div>
-       
-
-        
-
-        {/* <TeamCard
-          image="https://images.pexels.com/photos/34408249/pexels-photo-34408249.jpeg"
-          name="John Doe"
-          role="Lead Developer"
-          socials={{
-            linkedin: "https://linkedin.com/in/johndoe",
-            twitter: "https://twitter.com/johndoe",
-            github: "https://github.com/johndoe"
-          }}
-          className="w-[min(400px,90vw)] h-[min(600px,120vw)]"
-        /> */}
 
         
       </div>
@@ -54,9 +39,7 @@ export default function Home() {
         <CardStack />
       </div>
 
-      <section style={{ width: '100%', height: '600px' }}>
-        <Gallery3D title="IEEE CS" />
-      </section>
+      
     </>
   );
 }
